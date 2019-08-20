@@ -5,9 +5,9 @@ import com.facebook.react.ReactActivity;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import com.facebook.react.ReactInstanceManager;
-import com.facebook.react.bridge.ReactContext;
-import com.mehcode.reactnative.splashscreen.SplashScreen;
+// import com.facebook.react.ReactInstanceManager;
+// import com.facebook.react.bridge.ReactContext;
+// import com.mehcode.reactnative.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity {
 
@@ -20,11 +20,11 @@ public class MainActivity extends ReactActivity {
         return "run_guys_rn";
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-      // Show the js-controlled splash screen
-        SplashScreen.show(this, getReactInstanceManager());
+    // @Override
+    // protected void onCreate(Bundle savedInstanceState) {
+    //   // Show the js-controlled splash screen
+    //     SplashScreen.show(this, getReactInstanceManager());
 
-        super.onCreate(savedInstanceState);
-    }
+    //     super.onCreate(savedInstanceState);
+    // }
 }
