@@ -13,7 +13,6 @@ import {
   Actions,
 } from 'react-native-router-flux';
 import LinearGradient from 'react-native-linear-gradient';
-
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
@@ -58,6 +57,8 @@ class Login extends React.Component {
             <Text style={styles.sectionTitle}>个行</Text>
             <Text style={styles.sectionDescription}>用行走创造公益价值</Text>
             <TextInput
+              type="number"
+              keyboardType='numeric'
               style={styles.phoneInput}
               onChangeText={phone => this.setState({ phone })}
               value={this.state.phone}

@@ -3,9 +3,11 @@ import Login from './views/login/index';
 import UserCenter from './views/user-center/index';
 import MedalRecord from './views/user-center/medal-record';
 import RunRecord from './views/user-center/run-record';
+import Share from './views/user-center/share';
 import ScoreRecord from './views/integral/score-record';
 import RunMap from './views/run-map/index';
 import Integral from './views/integral/index';
+import StartTask from './views/run-map/start-task';
 import {
   Scene,
   Router,
@@ -21,19 +23,21 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import SplashScreen from "rn-splash-screen";
+// import SplashScreen from "rn-splash-screen";
 
 class App extends Component {
   render() {
-    setTimeout(() => {
-      SplashScreen.hide()
-    }, 10)
+    // setTimeout(() => {
+    //   SplashScreen.hide()
+    // }, 10)
 
     return (
       <Router>
         <Scene key="root">
-          <Scene key="run_map" component={RunMap} hideNavBar={true} />
           <Scene key="login" component={Login} hideNavBar={true} />
+          <Scene key="share" component={Share} hideNavBar={true} />
+          <Scene key="start_task" component={StartTask} hideNavBar={true} />
+          <Scene key="run_map" component={RunMap} hideNavBar={true} />
           <Scene key="integral" component={Integral} hideNavBar={true} />
           <Scene key="user_center" component={UserCenter} hideNavBar={true} />
           <Scene key="run_record" component={RunRecord} hideNavBar={true} />

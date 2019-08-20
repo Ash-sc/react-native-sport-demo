@@ -49,7 +49,7 @@ class UserCenter extends Component {
   }
 
   shareDetail() {
-    alert('TO BE CONTINUED')
+    Actions.share()
   }
 
   render() {
@@ -116,7 +116,7 @@ class UserCenter extends Component {
               >
                 <View style={{ flex: 1, paddingLeft: 10 }}>
                   <View><Text style={{ fontSize: 20, marginBottom: 10, color: txtColor, }}>运动报告</Text></View>
-                  <View><Text style={{ fontSize: 18, marginBottom: 10, color: txtColor, }}>分享至社交圈 最高可获500积分</Text></View>
+                  <View><Text style={{ fontSize: 16, marginBottom: 10, color: txtColor, }}>分享至社交圈 最高可获500积分</Text></View>
                 </View>
                 <Image source={require('./jump.png')} style={{ width: 24, height: 24, marginTop: 20 }}></Image>
               </View>
